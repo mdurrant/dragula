@@ -595,6 +595,7 @@ function getCoord (coord, e) {
   if (coord in missMap && !(coord in host) && missMap[coord] in host) {
     coord = missMap[coord];
   }
+  console.log(host[coord]);
   return host[coord];
 }
 
